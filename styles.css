@@ -21,8 +21,20 @@ h1 {
 }
 
 h2 {
-    color: darkslategray;
+    color: #3b2c35;
     text-align: center;
+}
+
+.mood {
+    color: darkslategray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300px;
+    font-size: 23px;
+}
+
+#select-mood {
+    background-color: aqua; //this is not changing 
+    border: 2px solid aqua;
 }
 select, button {
     padding: 11px;
