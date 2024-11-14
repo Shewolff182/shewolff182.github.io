@@ -1,8 +1,17 @@
 body {
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-display: flex;
-justify-content: center;
-height: 111vh;
-margin: 0;
-background-color: #b6d5b6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    height: 111vh;
+    margin: 0;
+    background-color: #b6d5b6;
 }
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: beige;
+}
+
