@@ -76,3 +76,16 @@ button:hover {
     max-width: 400px;  
     background-color: #3b2c35;  
 }
+
+/* navigation */
+nav {
+    background-color: #5d6e75;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin: 0;
+}
