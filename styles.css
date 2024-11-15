@@ -4,7 +4,9 @@ body {
     justify-content: center;
     height: 111vh;
     margin: 0;
+    padding: 0;
     background-color: #91ae9e;
+    overflow: hidden;
 }
 
 .container {
@@ -32,10 +34,11 @@ h2 {
     font-size: 23px;
 }
 
-#select-mood {
+/* #select-mood {
     background-color: aqua; //this is not changing 
     border: 2px solid aqua;
-}
+} */
+
 select, button {
     padding: 11px;
     margin: 11px 6px;
@@ -77,15 +80,44 @@ button:hover {
     background-color: #3b2c35;  
 }
 
-/* navigation */
+/* navigation bar*/
 nav {
+    position: fixed;
     background-color: #5d6e75;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+ 
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    gap: 18px;
+    gap: 36px;
     justify-content: center;
-    margin: 0;
+    margin: 5;
+}
+nav ul li a {
+    color: #dad7cd;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* ul.nav li {
+    display: inline;
+}
+
+ul.nav li a{
+    color: #91ae9e;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.nav li a:hover {
+    background-color: #dad7cd;
+} */
+
+.container {
+    padding-top: 60px;
 }
