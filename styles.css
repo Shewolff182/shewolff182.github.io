@@ -83,12 +83,10 @@ button:hover {
 /* navigation bar*/
 nav {
     position: fixed;
-    background-color: #5d6e75;
+    background-color: #3b2c35;
     top: 0;
     width: 100%;
     z-index: 1000;
-
- 
 }
 
 nav ul {
