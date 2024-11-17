@@ -1,4 +1,4 @@
-document.getElementById("submit-btn").addEventListener("click", function() {
+document.getElementById("submit-btn").addEventListener("click", function () {
     const mood = document.getElementById("mood").value;
     const messageBox = document.getElementById("message");
 
@@ -6,7 +6,7 @@ document.getElementById("submit-btn").addEventListener("click", function() {
 
     switch (mood) {
         case "happy":
-            message = "Savor every second of this happiness, allowing it to spread. You are on a path of positivity and growth, keep moving forward!" ;
+            message = "Savor every second of this happiness, allowing it to spread. You are on a path of positivity and growth, keep moving forward!";
             break;
         case "sad":
             message = "Even when times are tough, keep in mind that brighter days are ahead. Take it one day, minute, second at a time... each moment will bring you closer to healing!";
@@ -20,5 +20,6 @@ document.getElementById("submit-btn").addEventListener("click", function() {
         default:
             message = "Please select a mood to receive a motivational message.";
     }
+
     messageBox.textContent = message;
 });
