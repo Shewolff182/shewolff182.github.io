@@ -9,6 +9,9 @@ body {
     overflow: hidden;
 }
 
+.welcome {
+    padding: 45px;
+}
 .container {
     text-align: center;
     padding: 20px;
@@ -100,7 +103,11 @@ nav ul li a {
     color: #dad7cd;
     text-decoration: none;
     font-size: 1em;
+}nav ul li a:hover {
+    text-decoration: underline;
 }
+
+
 
 /* ul.nav li {
     display: inline;
@@ -118,4 +125,55 @@ ul.nav li a:hover {
 
 .container {
     padding-top: 60px;
+}
+
+.about {
+    padding: 45px;
+}
+
+.contact {
+    padding: 45px;
+}
+
+/*form*/
+.form-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #91ae9e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
 }
