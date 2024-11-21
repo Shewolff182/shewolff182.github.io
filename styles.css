@@ -9,6 +9,42 @@ body {
     overflow: hidden;
 }
 
+body {
+    background-image: url('assets/silhouette-plant-sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    height: 100vh;
+    background-color: #3b2c35; 
+    color: #ece7e8; 
+    padding: 20px; 
+}
+
+.banner h1 {
+    font-size: 3em; 
+    margin: 0; 
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: rgb(80, 120, 120);
+}
+
+.banner p {
+    font-size: 1.5em; 
+    margin-top: 10px; 
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
 main {
     margin-top: 80px;
     text-align: center;
@@ -33,6 +69,23 @@ main {
     
 }
 
+.about h1 {
+    font-size: 2.5em; 
+    color: rgb(66, 116, 116);
+    margin-bottom: 20px;
+}
+
+.about-greeting  {
+    font-size: 1.2em; 
+    color: #dad7cd;
+    margin: 15px auto;
+    max-width: 700px; 
+    background-color: #3b2c35;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(242, 236, 236, 0.1); 
+}
+
 .contact {
     padding: 45px;
 }
@@ -42,18 +95,18 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #dad7cd;
+    background-color: #3b2c35;
     max-width: 500px;
     margin: 0 auto;
 }
 
 h1 {
-    color: darkslategray;
+    color: rgb(80, 120, 120);
     font-size: 2em;
 }
 
 h2 {
-    color: #3b2c35;
+    color: #dad7cd;
     text-align: center;
     margin: 22px 0;
 }
@@ -67,7 +120,7 @@ h2 {
 }
 
 .mood-selector label {
-    color: darkslategray;
+    color: #dad7cd;
     font-size: 1em;
     margin-bottom: 11px;
     display: block;
@@ -81,8 +134,36 @@ select, button {
     font-size: 1em;
 }
 
+/* Change border and background color on focus */
+select:focus {
+    border-color: #91ae9e; /* Custom focus border color */
+    background-color: #ece7e8; /* Custom focus background color */
+    color: #3b2c35;
+    outline: none; /* Ensure no default outline */
+}
+
+select {
+    padding: 11px;
+    margin: 11px 6px;
+    border-radius: 6px;
+    border: 2px solid #3b2c35; /* Default border color */
+    font-size: 1em;
+    background-color: #dad7cd; /* Background color */
+    color: darkslategray; /* Text color */
+    outline: none; /* Remove default outline */
+    appearance: none; /* Remove default browser styles */
+}
+
+select:focus, select:hover {
+    border-color: #5d6e75; /* Custom border color when focused or hovered */
+    background-color: #ece7e8; /* Custom background color */
+    color: #3b2c35; /* Custom text color */
+    box-shadow: 0 0 5px rgba(93, 110, 117, 0.8); /* Add a subtle glow effect */
+}
+
+
 button {
-    background-color: darkslategray;
+    background-color: rgb(66, 100, 100);
     color: #ece7e8;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -99,10 +180,10 @@ button:hover {
     padding: 16px;
     font-size: 2em;
     color: #ece7e8;
-    font-style: italic;
+    font-style: normal;
     transition: all 0.3s ease;
     border-radius: 8px;
-    background-color: #3b2c35;
+    background-color: rgb(66, 100, 100);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*this is vertical, horizontal offset, then the blur*/
     max-width: 444px;
 
@@ -194,3 +275,40 @@ button:hover {
 .form-container button:hover {
     background-color: darkslategray;
 }
+
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2em; 
+    }
+    .about p {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+select:focus {
+    border-color: #91ae9e; 
+    background-color: #ece7e8; 
+    color: #3b2c35;
+    outline: none; 
+}
+
+select {
+    padding: 11px;
+    margin: 11px 6px;
+    border-radius: 6px;
+    border: 2px solid #3b2c35; 
+    font-size: 1em;
+    background-color: #dad7cd; 
+    color: darkslategray; 
+    outline: none; 
+    appearance: none;
+}
+
+select:focus, select:hover {
+    border-color: #5d6e75; 
+    background-color: #ece7e8; 
+    color: #3b2c35; 
+    box-shadow: 0 0 5px rgba(93, 110, 117, 0.8); 
+}
+
