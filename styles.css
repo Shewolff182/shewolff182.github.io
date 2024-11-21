@@ -7,16 +7,12 @@ body {
     padding: 0;
     /* background-color: #91ae9e; */
     overflow: hidden;
-}
-
-body {
     background-image: url('assets/silhouette-plant-sunset.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    margin: 0;
 }
+
 
 .banner {
     display: flex;
