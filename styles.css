@@ -185,20 +185,6 @@ button:hover {
 
 }
 
-/* #message {
-    position: relative;
-    text-align: center;
-    top: 88px;  
-    left: 50%; 
-    transform: translateX(-50%);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%; 
-    max-width: 400px;  
-    background-color: #3b2c35;  
-} */
-
 /* navigation bar*/
 .navbar {
     position: fixed;
